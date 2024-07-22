@@ -30,17 +30,34 @@
             text-align: center;
         }
 
-        .images-container {
+        .products-container {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            gap: 10px;
+            gap: 20px;
         }
 
-        .images-container img {
+        .product-wrapper {
+            background-color: #ffc0cb; /* Pink color */
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #f8f9fa;
             width: 300px;
+            text-align: left;
+        }
+
+        .product img {
+            width: 100%;
             height: 300px;
             object-fit: cover;
-            border: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 15px;
         }
 
         a {
@@ -61,16 +78,6 @@
             margin: 10px 0;
         }
 
-        .description-box {
-            background-color: #f8f9fa;
-            color: #333;
-            border: 2px solid #9a0e65;
-            padding: 20px;
-            border-radius: 10px;
-            display: inline-block;
-            margin-top: 20px;
-            text-align: left;
-        }
         .button-container {
             position: absolute;
             top: 20px;
@@ -102,19 +109,53 @@
         </div>
     </header>
     <main>
-        <div class="images-container">
-            <img src="C:\Users\DELL\Pictures\lippiii.jpg" alt="Lipstick">
-            <img src="C:\Users\DELL\Pictures\maybelline_super-stay-vinyl-ink-liquid-lipcolor_001_product-760x760.jpg" alt="Lipstick">
+        <div class="products-container">
+            <div class="product-wrapper">
+                <div class="product">
+                    <img src="C:\Users\DELL\Pictures\loreal.jpg" alt="Lipstick">
+                    <div class="description-box">
+                        <ul>
+                            <li>Price: $16.00</li>
+                            <li>Available Shades: Red, Pink, Nude</li>
+                            <li>Types Available: Matte</li>
+                            <li>Brand: Loreal Paris</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="product-wrapper">
+                <div class="product">
+                    <img src="C:\Users\DELL\Pictures\maybelline_super-stay-vinyl-ink-liquid-lipcolor_001_product-760x760.jpg" alt="Lipstick">
+                    
+                    <div class="description-box">
+                        <ul>
+                            <li>Price: $19.00</li>
+                            <li>Available Shades: Red, Pink, Nude</li>
+                            <li>Types Available: Matte, Glossy</li>
+                            <li>Brand: Maybelline</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="product-wrapper">
+                <div class="product">
+                    <img src="C:\Users\DELL\Pictures\revlon.jpg" alt="Lipstick">
+                    
+                    <div class="description-box">
+                        <ul>
+                            <li>Price: $17.00</li>
+                            <li>Available Shades: Red, Pink, Nude, Wine</li>
+                            <li>Types Available: Cream, Satin</li>
+                            <li>Brand: Revlon</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
-        <p>Our premium lipstick provides long-lasting color and a smooth finish.</p>
-        <div class="description-box">
-            <ul>
-                <li>Price: $15.00</li>
-                <li>Available Shades: Red, Pink, Nude</li>
-                <li> Types Availiable: Matte, Cream, Glossy, Satin</li>
-                <li>Brand: Prettify_me</li>
-            </ul>
-        
+        <div>
+            <p>Our premium lipstick provides long-lasting color and a smooth finish.</p>
+        </div>
     </main>
 </body>
 </html>

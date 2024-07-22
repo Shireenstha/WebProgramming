@@ -30,17 +30,34 @@
             text-align: center;
         }
 
-        .images-container {
+        .products-container {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            gap: 10px;
+            gap: 20px;
         }
 
-        .images-container img {
+        .product-wrapper {
+            background-color: #ffc0cb; /* Pink color */
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #f8f9fa;
             width: 300px;
+            text-align: left;
+        }
+
+        .product img {
+            width: 100%;
             height: 300px;
             object-fit: cover;
-            border: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 15px;
         }
 
         a {
@@ -61,16 +78,6 @@
             margin: 10px 0;
         }
 
-        .description-box {
-            background-color: #f8f9fa;
-            color: #333;
-            border: 2px solid #9a0e65;
-            padding: 20px;
-            border-radius: 10px;
-            display: inline-block;
-            margin-top: 20px;
-            text-align: left;
-        }
         .button-container {
             position: absolute;
             top: 20px;
@@ -102,19 +109,48 @@
         </div>
     </header>
     <main>
-        <div class="images-container">
-            <img src="C:\Users\DELL\Pictures\eyespp.jpg" alt="Eyeshadow Palette">
-            <img src="C:\Users\DELL\Pictures\eyeef.jpg" alt="Eyeshadow Palette">
+        <div class="products-container">
+            <div class="product-wrapper">
+                <div class="product">
+                    <img src="C:\Users\DELL\Pictures\eyeef.jpg" alt="Eyeshadow Palette">
+                    <div class="description-box">
+                        <ul>
+                            <li>Price: $15.00</li>
+                            <li>Available in matte and shimmer form.</li>
+                            <li>For daily use, party look, smokey look</li>
+                            <li>Brand: L.A Girl</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="product-wrapper">
+                <div class="product">
+                    <img src="C:\Users\DELL\Pictures\eyespp.jpg" alt="Eyeshadow Palette">
+                  <div class="description-box">
+                        <ul>
+                            <li>Price: $30.00</li>
+                            <li>Available in matte and shimmer form.</li>
+                            <li>For daily use, party look, , nude look, smokey look</li>
+                            <li>Brand: Loreal Paris</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="product-wrapper">
+                <div class="product">
+                    <img src="C:\Users\DELL\Desktop\huda-beauty-eyeshadow-palette-500x500.webp" alt="Eyeshadow Palette">
+                    <div class="description-box">
+                        <ul>
+                            <li>Price: $40.00</li>
+                            <li>Available in matte and shimmer form.</li>
+                            <li>For daily use, party look, smokey look</li>
+                            <li>Brand: Huda Beauty</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p>Our versatile eyeshadow palette features richly pigmented shades for stunning looks.</p>
-        <div class="description-box">
-            <ul>
-                <li>Price: $30.00</li>
-                <li>Available in matte, liquid, and shimmer form.</li>
-                <li>For daily use, party look, smokey look</li>
-                <li>Brand: Prettify_me</li>
-            </ul>
-        
+        <div><p>Our versatile eyeshadow palette features richly pigmented shades for stunning looks.</p></div>
     </main>
 </body>
 </html>

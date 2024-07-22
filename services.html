@@ -12,7 +12,7 @@
             background-color: #bdb5ba;
         }
         .container {
-            width: 60%;
+            width: 80%;
             margin: 0 auto;
             padding: 20px;
         }
@@ -32,12 +32,18 @@
         }
         .service-section {
             display: flex;
-            justify-content: space-around;
-            align-items: flex-start;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
             margin-top: 20px;
         }
         .service {
+            background-color: #fff;
             text-align: center;
+            flex: 1 1 300px;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .service img {
             width: 100px; 
@@ -68,45 +74,62 @@
             width: 50px;
             height: 50px;
         }
+        .button-container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: rgb(141, 33, 92);
+            background-color: #919a9e;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
 
 <div class="header">
     <h1>Our Services</h1>
+    <div class="button-container">
+        <a href="file:///C:/Users/DELL/Desktop/Web/WebProgramming/praticeproduct.html" class="button">Back</a>
+    </div>
     <p class="tagline">Where Beauty Meets Expertise</p>
 </div>
 
 <div class="service-section">
     <div class="service">
         <img src="C:\Users\DELL\Downloads\download (4).jpg" alt="Makeup and Skincare Products">
-
         <p><a href="file:///C:/Users/DELL/Desktop/Web/WebProgramming/consulation.html">Skin Consultation</a></p>
         <h1>Skin Consultation</h1>
         <p>Discover the ideal skincare regimen for your skin type.</p>
         <p>Our experts offer personalized product guidance.</p>
-        <p> Address your skin concerns effectively. </p>
+        <p>Address your skin concerns effectively.</p>
         <p>Achieve your best skin yet.</p>
     </div>
     <div class="service">
         <img src="C:\Users\DELL\Downloads\download (5).jpg" alt="Makeup and Skincare Products">
         <p><a href="file:///C:/Users/DELL/Desktop/Web/WebProgramming/treatment.html">Facial Treatments</a></p>
         <h1>Facial Treatments</h1>
-        <p> Indulge in our luxurious facial treatments.</p> 
+        <p>Indulge in our luxurious facial treatments.</p> 
         <p>Rejuvenate and refresh your skin.</p>
         <p>Choose from hydrating, anti-aging, or deep-cleansing facials.</p>
-        <p> Experience the ultimate skincare.</p>
+        <p>Experience the ultimate skincare.</p>
     </div>
-</div>
-
-<div class="service">
-    <img src="C:\Users\DELL\Downloads\images (4).jpg" alt="Makeup and Skincare Products">
-    <p><a href="file:///C:/Users/DELL/Desktop/Web/WebProgramming/classes.html">Workshop and Classes</a></p>
-    <h1>Workshop and Classes</h1>
-    <p> Join our interactive workshops and classes.</p> 
-    <p>Learn about the latest trends in skincare and makeup. </p>
-    <p>Perfect for beauty enthusiasts.</p>
-    <p> Ideal for professionals alike.</p>
+    <div class="service">
+        <img src="C:\Users\DELL\Downloads\images (4).jpg" alt="Makeup and Skincare Products">
+        <p><a href="file:///C:/Users/DELL/Desktop/Web/WebProgramming/classes.html">Workshop and Classes</a></p>
+        <h1>Workshop and Classes</h1>
+        <p>Join our interactive workshops and classes.</p> 
+        <p>Learn about the latest trends in skincare and makeup.</p>
+        <p>Perfect for beauty enthusiasts.</p>
+        <p>Ideal for professionals alike.</p>
+    </div>
 </div>
 
 <div class="footer">
