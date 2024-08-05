@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  background-color: rgb(129, 10, 95);
+ flex-direction: row;
+ text-align: center;
+}
+.flex-item-left{
+    background-color: aquamarine;
+    padding: 20px;
+    flex: 50px;
+
+}
+.flex-item-right{
+    background-color: aquamarine;
+    padding: 20px;
+    flex: 50px;
+}
+
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+}
+</style>
+</head>
+<body>
+
+<h1>Flex Container</h1>
+
+<div class="flex-container">
+    
+    <div class="flex-item-left">Shireen</div>
+    <div class="flex-item-right">Shrestha</div>
+ 
+</div>
+
+</body>
+</html>
+
+

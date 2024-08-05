@@ -38,7 +38,7 @@
         }
 
         .product-wrapper {
-            background-color: #ffc0cb; /* Pink color */
+            background-color: #ffc0cb; 
             padding: 10px;
             border-radius: 15px;
         }
@@ -110,26 +110,125 @@
         .button:hover {
             background-color: #810650;
         }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .products-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .product-wrapper {
+            background-color: #ffc0cb; /* Pink color */
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            width: 300px;
+            text-align: left;
+        }
+
+        .product img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        .description-box {
+            background-color: #f8f9fa;
+            color: #333;
+            border: 2px solid #9a0e65;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        
+        @media (max-width: 768px) {
+            .product {
+                width: 80%;
+            }
+
+            .product-wrapper {
+                width: 100%;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .product img {
+                height: auto;
+            }
+
+            .button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+
+            .product {
+                padding: 15px;
+            }
+
+            .product-wrapper {
+                padding: 5px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Mascara</h1>
         <div class="button-container">
-            <a href="file:///C:/Users/DELL/Desktop/Web/WebProgramming/week2.html" class="button">Back to Main Page</a>
+            <a href="file:///C:/Users/DELL/Desktop/Web/WebProgramming/week2.html" class="button">Back</a>
         </div>
     </header>
     <main>
         <div class="products-container">
             <div class="product-wrapper">
                 <div class="product">
-                    <img src="C:\Users\DELL\Pictures\best-loreal-mascaras.jpg" alt="Mascara">
+                    <img src="C:\Users\DELL\Desktop\mascara.jpg" alt="Mascara">
                     <div class="description-box">
                         <ul>
                             <li>Price: $22.00</li>
                             <li>Types Available: Lengthening, volume, curling</li>
                             <li>Both Waterproof and Non-waterproof</li>
-                            <li>Brand: Loreal Paris</li>
+                            <li>Brand: Maybelline</li>
                         </ul>
                     </div>
                 
@@ -137,13 +236,13 @@
             </div>
             <div class="product-wrapper">
                 <div class="product">
-                    <img src="C:\Users\DELL\Desktop\s-l400.jpg" alt="Mascara">
+                    <img src="C:\Users\DELL\Desktop\lore.jpg" alt="Mascara">
                     <div class="description-box">
                         <ul>
                             <li>Price: $18.00</li>
                             <li>Types Available: Lengthening, volume, curling</li>
                             <li>Both Waterproof and Non-waterproof</li>
-                            <li>Brand: Maybelline</li>
+                            <li>Brand: Loreal Paris</li>
                         </ul>
                     </div>
             
@@ -151,7 +250,7 @@
             </div>
             <div class="product-wrapper">
                 <div class="product">
-                    <img src="C:\Users\DELL\Desktop\s-l400 (1).jpg" alt="Mascara">
+                    <img src="C:\Users\DELL\Desktop\tech.jpg" alt="Mascara">
                     <div class="description-box">
                         <ul>
                             <li>Price: $12.00 to $15.00</li>

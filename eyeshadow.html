@@ -18,6 +18,7 @@
             text-align: center;
             border-bottom: 1px solid #ddd;
             color: white;
+            position: relative; 
         }
 
         h1 {
@@ -99,13 +100,49 @@
         .button:hover {
             background-color: #810650;
         }
+
+        
+        @media (max-width: 768px) {
+            .product {
+                width: 80%;
+            }
+
+            .product-wrapper {
+                width: 100%;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .product img {
+                height: auto;
+            }
+
+            .button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+
+            .product {
+                padding: 15px;
+            }
+
+            .product-wrapper {
+                padding: 5px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Eyeshadow Palette</h1>
         <div class="button-container">
-            <a href="file:///C:/Users/DELL/Desktop/Web/WebProgramming/week2.html" class="button">Back to Main Page</a>
+            <a href="file:///C:/Users/DELL/Desktop/Web/WebProgramming/week2.html" class="button">Back</a>
         </div>
     </header>
     <main>
@@ -126,11 +163,11 @@
             <div class="product-wrapper">
                 <div class="product">
                     <img src="C:\Users\DELL\Pictures\eyespp.jpg" alt="Eyeshadow Palette">
-                  <div class="description-box">
+                    <div class="description-box">
                         <ul>
                             <li>Price: $30.00</li>
                             <li>Available in matte and shimmer form.</li>
-                            <li>For daily use, party look, , nude look, smokey look</li>
+                            <li>For daily use, party look, nude look, smokey look</li>
                             <li>Brand: Loreal Paris</li>
                         </ul>
                     </div>
@@ -138,7 +175,7 @@
             </div>
             <div class="product-wrapper">
                 <div class="product">
-                    <img src="C:\Users\DELL\Desktop\huda-beauty-eyeshadow-palette-500x500.webp" alt="Eyeshadow Palette">
+                    <img src="C:\Users\DELL\Desktop\huda_beauty_eyeshadow-nude-th1.jpg" alt="Eyeshadow Palette">
                     <div class="description-box">
                         <ul>
                             <li>Price: $40.00</li>
@@ -150,7 +187,9 @@
                 </div>
             </div>
         </div>
-        <div><p>Our versatile eyeshadow palette features richly pigmented shades for stunning looks.</p></div>
+        <div>
+            <p>Our versatile eyeshadow palette features richly pigmented shades for stunning looks.</p>
+        </div>
     </main>
 </body>
 </html>

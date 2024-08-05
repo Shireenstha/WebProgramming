@@ -18,6 +18,7 @@
             text-align: center;
             border-bottom: 1px solid #ddd;
             color: white;
+            position: relative; 
         }
 
         h1 {
@@ -38,7 +39,7 @@
         }
 
         .product-wrapper {
-            background-color: #ffc0cb; /* Pink color */
+            background-color: #ffc0cb;
             padding: 10px;
             border-radius: 15px;
         }
@@ -99,13 +100,48 @@
         .button:hover {
             background-color: #810650;
         }
+
+        @media (max-width: 768px) {
+            .product {
+                width: 80%;
+            }
+
+            .product-wrapper {
+                width: 100%;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .product img {
+                height: auto;
+            }
+
+            .button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+
+            .product {
+                padding: 15px;
+            }
+
+            .product-wrapper {
+                padding: 5px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Lipstick</h1>
         <div class="button-container">
-            <a href="file:///C:/Users/DELL/Desktop/Web/WebProgramming/week2.html" class="button">Back to Main Page</a>
+            <a href="file:///C:/Users/DELL/Desktop/Web/WebProgramming/week2.html" class="button">Back</a>
         </div>
     </header>
     <main>
@@ -126,7 +162,6 @@
             <div class="product-wrapper">
                 <div class="product">
                     <img src="C:\Users\DELL\Pictures\maybelline_super-stay-vinyl-ink-liquid-lipcolor_001_product-760x760.jpg" alt="Lipstick">
-                    
                     <div class="description-box">
                         <ul>
                             <li>Price: $19.00</li>
@@ -140,7 +175,6 @@
             <div class="product-wrapper">
                 <div class="product">
                     <img src="C:\Users\DELL\Pictures\revlon.jpg" alt="Lipstick">
-                    
                     <div class="description-box">
                         <ul>
                             <li>Price: $17.00</li>
@@ -149,7 +183,6 @@
                             <li>Brand: Revlon</li>
                         </ul>
                     </div>
-                    
                 </div>
             </div>
         </div>

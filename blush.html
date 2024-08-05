@@ -111,13 +111,49 @@
             margin-top: 20px;
             text-align: left;
         }
+
+        
+        @media (max-width: 768px) {
+            .product {
+                width: 80%;
+            }
+
+            .product-wrapper {
+                width: 100%;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .product img {
+                height: auto;
+            }
+
+            .button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+
+            .product {
+                padding: 15px;
+            }
+
+            .product-wrapper {
+                padding: 5px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Blush</h1>
         <div class="button-container">
-            <a href="file:///C:/Users/DELL/Desktop/Web/WebProgramming/week2.html" class="button">Back to Main Page</a>
+            <a href="file:///C:/Users/DELL/Desktop/Web/WebProgramming/week2.html" class="button">Back</a>
         </div>
     </header>
     <main>
@@ -152,7 +188,7 @@
                     <div class="description-box">
                         <ul>
                             <li>Price: $35.00</li>
-                            <li>Types Available Powder</li>
+                            <li>Types Available: Powder</li>
                             <li>Brand: Mac</li>
                         </ul>
                     </div>
