@@ -19,11 +19,26 @@
             text-align: center;
             border-bottom: 1px solid #ddd;
             font-family: Georgia, 'Times New Roman', Times, serif;
+            position: relative;
         }
 
         h1 {
             margin: 0;
             font-size: 2.5em;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            background-color: #919a9e;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
         }
 
         main {
@@ -94,7 +109,6 @@
             bottom: 0;
         }
 
-    
         @media (max-width: 768px) {
             .products {
                 flex-direction: column;
@@ -131,6 +145,7 @@
 </head>
 <body>
     <header>
+        <a href="file:///C:/Users/DELL/Desktop/Web/WebProgramming/homepage.html#products" class="back-button">Back</a>
         <h1>Prettify_me</h1>
     </header>
     <main>

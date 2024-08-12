@@ -4,22 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skincare and Makeup Store - Services</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #bdb5ba;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
+            background-color: #e6e2e6;
         }
         .header {
             text-align: center;
             padding: 20px 0;
-            background-color: #f10f9a;
+            background-color: #811050;
         }
         .header h1 {
             margin: 0;
@@ -28,7 +23,7 @@
         }
         .tagline {
             font-size: 1.2em;
-            color: rgb(196, 194, 194);
+            color: #f3e5f0;
         }
         .service-section {
             display: flex;
@@ -46,18 +41,19 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .service img {
-            width: 100px; 
-            height: auto;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
         }
         .service h1 {
             margin: 10px 0 0 0;
             font-size: 1.5em;
-            color: rgb(158, 17, 97);
+            color: #811050;
         }
         .footer {
             text-align: center;
             padding: 20px 0;
-            background-color: #f10f9a;
+            background-color: #811050;
             margin-top: 20px;
         }
         .footer p {
@@ -83,12 +79,56 @@
             display: inline-block;
             padding: 10px 20px;
             font-size: 16px;
-            color: rgb(141, 33, 92);
+            color: #fff;
             background-color: #919a9e;
             border: none;
             border-radius: 5px;
             text-decoration: none;
             cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            .tagline {
+                font-size: 1em;
+            }
+            .service-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            .service {
+                flex: 1 1 auto;
+                width: 90%;
+            }
+            .button-container {
+                top: 10px;
+                left: 10px;
+            }
+            .button {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            .tagline {
+                font-size: 0.9em;
+            }
+            .service img {
+                width: 80px;
+                height: 80px;
+            }
+            .service h1 {
+                font-size: 1.3em;
+            }
+            .footer p {
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
@@ -97,38 +137,56 @@
 <div class="header">
     <h1>Our Services</h1>
     <div class="button-container">
-        <a href="file:///C:/Users/DELL/Desktop/Web/WebProgramming/praticeproduct.html" class="button">Back</a>
+        <a href="file:///C:/Users/DELL/Desktop/Web/WebProgramming/homepage.html#products" class="button">Back</a>
     </div>
     <p class="tagline">Where Beauty Meets Expertise</p>
 </div>
 
-<div class="service-section">
-    <div class="service">
-        <img src="C:\Users\DELL\Downloads\download (4).jpg" alt="Makeup and Skincare Products">
-        <p><a href="file:///C:/Users/DELL/Desktop/Web/WebProgramming/consulation.html">Skin Consultation</a></p>
-        <h1>Skin Consultation</h1>
-        <p>Discover the ideal skincare regimen for your skin type.</p>
-        <p>Our experts offer personalized product guidance.</p>
-        <p>Address your skin concerns effectively.</p>
-        <p>Achieve your best skin yet.</p>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="file:///C:/Users/DELL/Desktop/Web/WebProgramming/consulation.html">1 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="file:///C:/Users/DELL/Desktop/Web/WebProgramming/treatment.html"> 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="file:///C:/Users/DELL/Desktop/Web/WebProgramming/classes.html">3</a>
+            </li>
+        </ul>
     </div>
-    <div class="service">
-        <img src="C:\Users\DELL\Downloads\download (5).jpg" alt="Makeup and Skincare Products">
-        <p><a href="file:///C:/Users/DELL/Desktop/Web/WebProgramming/treatment.html">Facial Treatments</a></p>
-        <h1>Facial Treatments</h1>
-        <p>Indulge in our luxurious facial treatments.</p> 
-        <p>Rejuvenate and refresh your skin.</p>
-        <p>Choose from hydrating, anti-aging, or deep-cleansing facials.</p>
-        <p>Experience the ultimate skincare.</p>
-    </div>
-    <div class="service">
-        <img src="C:\Users\DELL\Downloads\images (4).jpg" alt="Makeup and Skincare Products">
-        <p><a href="file:///C:/Users/DELL/Desktop/Web/WebProgramming/classes.html">Workshop and Classes</a></p>
-        <h1>Workshop and Classes</h1>
-        <p>Join our interactive workshops and classes.</p> 
-        <p>Learn about the latest trends in skincare and makeup.</p>
-        <p>Perfect for beauty enthusiasts.</p>
-        <p>Ideal for professionals alike.</p>
+</nav>
+
+<div class="container">
+    <div class="service-section">
+        <div class="service">
+            <img src="C:\Users\DELL\Downloads\download (4).jpg" alt="Makeup and Skincare Products">
+            <p><a href="file:///C:/Users/DELL/Desktop/Web/WebProgramming/consulation.html">Skin Consultation</a></p>
+            <p>Discover the ideal skincare regimen for your skin type.</p>
+            <p>Our experts offer personalized product guidance.</p>
+            <p>Address your skin concerns effectively.</p>
+            <p>Achieve your best skin yet.</p>
+        </div>
+        <div class="service">
+            <img src="C:\Users\DELL\Downloads\download (5).jpg" alt="Makeup and Skincare Products">
+            <p><a href="file:///C:/Users/DELL/Desktop/Web/WebProgramming/treatment.html">Facial Treatments</a></p>
+            <p>Indulge in our luxurious facial treatments.</p> 
+            <p>Rejuvenate and refresh your skin.</p>
+            <p>Choose from hydrating, anti-aging, or deep-cleansing facials.</p>
+            <p>Experience the ultimate skincare.</p>
+        </div>
+        <div class="service">
+            <img src="C:\Users\DELL\Downloads\images (4).jpg" alt="Makeup and Skincare Products">
+            <p><a href="file:///C:/Users/DELL/Desktop/Web/WebProgramming/classes.html">Workshop and Classes</a></p>
+            <p>Join our interactive workshops and classes.</p> 
+            <p>Learn about the latest trends in skincare and makeup.</p>
+            <p>Perfect for beauty enthusiasts.</p>
+            <p>Ideal for professionals alike.</p>
+        </div>
     </div>
 </div>
 
@@ -143,5 +201,9 @@
     </a>
 </div>
 
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
