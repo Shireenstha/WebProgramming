@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prettify_me - Home</title>
+    <title>Prettify_me - Branches</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -56,20 +56,27 @@
             color: #811050;
         }
 
-        .image-container {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
+        table {
+            width: 100%;
+            border-collapse: collapse;
         }
 
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            flex: 1;
-            margin: 10px;
-            max-height: 200px; 
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #811050;
+            color: white;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
         }
 
         footer {
@@ -81,13 +88,21 @@
         }
 
         @media (max-width: 768px) {
-            .image-container {
-                flex-direction: column;
-                align-items: center;
+            .navbar-nav {
+                text-align: center;
             }
 
-            .image-container img {
-                margin-bottom: 20px;
+            .navbar-nav .nav-item {
+                margin-bottom: 10px;
+            }
+
+            .content-box {
+                padding: 10px;
+                margin-bottom: 15px;
+            }
+
+            th, td {
+                padding: 5px;
             }
 
             footer {
@@ -97,21 +112,20 @@
         }
 
         @media (max-width: 576px) {
-            .jumbotron {
-                padding: 20px;
+            .jumbotron h1 {
+                font-size: 2.5rem;
             }
 
-            .jumbotron h1 {
+            .jumbotron p.lead {
+                font-size: 1rem;
+            }
+
+            .content-box h2 {
                 font-size: 1.5rem;
             }
 
-            .jumbotron p {
-                font-size: 1rem;
-            }
-
-            .btn-lg {
-                padding: 10px 20px;
-                font-size: 1rem;
+            table, th, td {
+                font-size: 0.9rem;
             }
         }
     </style>
@@ -126,7 +140,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="file:///C:/Users/DELL/Desktop/Web/WebProgramming/homepage.html#products">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="file:///C:/Users/DELL/Desktop/Web/WebProgramming/week2.html">Products</a>
@@ -146,39 +160,43 @@
 
     
     <div class="jumbotron">
-        <h1 class="display-4">Welcome to Prettify_me</h1>
-        <p class="lead">Your one-stop shop for high-quality makeup products.</p>
+        <h1 class="display-4">Our Branches</h1>
+        <p class="lead">Find a Prettify_me branch near you.</p>
         <hr class="my-4">
-        <p>Discover the perfect products to complete your makeup routine and express your unique style.</p>
-        <a class="btn btn-primary btn-lg" href="file:///C:/Users/DELL/Desktop/Web/WebProgramming/week2.html" role="button">Explore Products</a>
+        <p>Check out the addresses and contact details of our various branches.</p>
     </div>
 
    
     <div class="container">
-        <section id="products">
-            <div class="content-box">
-                <h2>Our Products</h2>
-                <a href="file:///C:/Users/DELL/Desktop/Web/WebProgramming/week2.html" class="button">Products</a>
-                <p>At Prettify_me, we offer a wide range of high-quality makeup products designed to enhance your beauty and bring out your best features. From vibrant lipsticks to flawless foundations, our collection is curated to meet the diverse needs of our customers.</p>
-                <div class="image-container">
-                    <img src="C:\Users\DELL\Desktop\makeup-cosmetics.webp" alt="Product 1">
-                    <img src="C:\Users\DELL\Desktop\mak.webp" alt="Product 2">
-                    <img src="C:\Users\DELL\Desktop\makee.jpg" alt="Product 3">
-                </div>
-            </div>
-        </section>
-        <section id="services">
-            <div class="content-box">
-                <h2>Our Services</h2>
-                <a href="file:///C:/Users/DELL/Desktop/Web/WebProgramming/services.html" class="button">Services</a>
-                <p>In addition to our exceptional products, we provide personalized beauty consultations to help you find the perfect products for your skin type and preferences. Our expert team is here to assist you in achieving your desired look.</p>
-                <div class="image-container">
-                    <img src="C:\Users\DELL\Desktop\skinanalysis.jpg" alt="Service 1">
-                    <img src="C:\Users\DELL\Desktop\artist.png" alt="Service 2">
-                    <img src="C:\Users\DELL\Desktop\skin-care-treatment.jpg" alt="Service 3">
-                </div>
-            </div>
-        </section>
+        <div class="content-box">
+            <h2>Branches</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Branch</th>
+                        <th>Address</th>
+                        <th>Contact Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lalitpur Branch</td>
+                        <td>Kumaripati, Avenue 88, 1st Floor</td>
+                        <td>9862038193</td>
+                    </tr>
+                    <tr>
+                        <td>Kathmandu Branch</td>
+                        <td>Sundhara, Civil Mall, 3rd floor</td>
+                        <td>9847279833</td>
+                    </tr>
+                    <tr>
+                        <td>Pokhara Branch</td>
+                        <td>Chiple Dhunga, Trade mall, 2nd Floor</td>
+                        <td>9867743289</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
     
